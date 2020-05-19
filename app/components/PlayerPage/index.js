@@ -16,6 +16,7 @@ import Button from '../Button/Loadable';
 
 const Wrapper = styled(Page)`
   width: auto;
+  margin-top: 120px !important;
 `;
 
 const GridWrapper = styled.div`
@@ -27,6 +28,8 @@ const Row = styled.div`
   display: grid;
   grid-gap: inherit;
   grid-auto-flow: column;
+  max-width: 300px;
+  margin: auto;
 `;
 
 export function PlayerPage(props) {

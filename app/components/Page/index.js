@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   width: 80vw;
   height: 80vh;
   overflow: auto;
-  transition: all 500ms cubic-bezier(0.68, -0.6, 0.32, 1.6), width 0ms ease,
+  transition: all 800ms cubic-bezier(0.68, -0.6, 0.32, 1.6), width 0ms ease,
     height 0ms ease, margin 0ms ease;
   opacity: ${props => (props.page === props.index ? '1' : '0')};
   transform: translateX(

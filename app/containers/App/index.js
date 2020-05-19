@@ -35,8 +35,8 @@ const Wrapper = styled.div`
 const Back = styled(Button)`
   position: absolute;
   z-index: 2;
-  top: 10px;
-  left: 10px;
+  top: 40px;
+  left: 40px;
   opacity: ${props => (props.page ? '1' : '0')};
   visibility: ${props => (props.page ? 'visible' : 'hidden')};
   transition: all 500ms ease;

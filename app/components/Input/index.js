@@ -17,6 +17,8 @@ const Wrapper = styled.input`
   color: #d3170b;
   font-size: 1rem;
   font-family: Futura;
+  max-width: 180px;
+  margin: auto;
   text-align: center;
   border-radius: 8px;
   padding: 10px 15px;
