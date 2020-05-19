@@ -21,9 +21,9 @@ const Wrapper = styled.button`
   min-width: 125px;
   width: fit-content;
   margin: auto;
-  transition: all 500ms ease;
+  transition: all 300ms ease;
   :active {
-    transform: translateY(2px);
+    transform: translateY(4px);
   }
   :hover {
     background: #ff8f3d33;

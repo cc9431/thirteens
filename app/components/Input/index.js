@@ -17,10 +17,14 @@ const Wrapper = styled.input`
   color: #d3170b;
   font-size: 1rem;
   font-family: Futura;
+  text-align: center;
   border-radius: 8px;
   padding: 10px 15px;
-  transition: all 500ms ease;
+  transition: opacity 500ms ease, all 500ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
   opacity: ${props => (props.show ? '1' : '0')};
+  transform: translateY(${props => (props.show ? '0px' : '-20px')});
+  visibility: ${props => (props.show ? 'visible' : 'hidden')};
+  }
 `;
 
 function Input({ className, onChange, value, placeholder, show }) {

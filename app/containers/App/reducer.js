@@ -11,7 +11,7 @@ export const initialState = {
 };
 
 /* eslint-disable default-case, no-param-reassign */
-const landingPageReducer = (state = initialState, action) =>
+const AppContainerReducer = (state = initialState, action) =>
   produce(state, draft => {
     switch (action.type) {
       case ON_SUBMIT_PLAYERS:
@@ -20,4 +20,4 @@ const landingPageReducer = (state = initialState, action) =>
     }
   });
 
-export default landingPageReducer;
+export default AppContainerReducer;

@@ -1,6 +1,6 @@
 /**
  *
- * Tests for BetTricksInput
+ * Tests for Page
  *
  * @see https://github.com/react-boilerplate/react-boilerplate/tree/master/docs/testing
  *
@@ -10,12 +10,12 @@ import React from 'react';
 import { render } from 'react-testing-library';
 // import 'jest-dom/extend-expect'; // add some helpful assertions
 
-import BetTricksInput from '../index';
+import Page from '../index';
 
-describe('<BetTricksInput />', () => {
+describe('<Page />', () => {
   it('Expect to not log errors in console', () => {
     const spy = jest.spyOn(global.console, 'error');
-    render(<BetTricksInput />);
+    render(<Page />);
     expect(spy).not.toHaveBeenCalled();
   });
 
@@ -31,7 +31,7 @@ describe('<BetTricksInput />', () => {
   it.skip('Should render and match the snapshot', () => {
     const {
       container: { firstChild },
-    } = render(<BetTricksInput />);
+    } = render(<Page />);
     expect(firstChild).toMatchSnapshot();
   });
 });
