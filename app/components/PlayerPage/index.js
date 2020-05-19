@@ -14,11 +14,6 @@ import Page from '../Page/Loadable';
 import Input from '../Input/Loadable';
 import Button from '../Button/Loadable';
 
-const Wrapper = styled(Page)`
-  width: auto;
-  margin-top: 120px !important;
-`;
-
 const GridWrapper = styled.div`
   display: grid;
   grid-gap: 10px;
@@ -54,7 +49,7 @@ export function PlayerPage(props) {
   };
 
   return (
-    <Wrapper page={page} index={pageIndex}>
+    <Page page={page} index={pageIndex}>
       <GridWrapper>
         {players.map((player, index) => (
           <Input
@@ -85,7 +80,7 @@ export function PlayerPage(props) {
         </Row>
         <Button text="start" onClick={() => validateNames()} />
       </GridWrapper>
-    </Wrapper>
+    </Page>
   );
 }
 
