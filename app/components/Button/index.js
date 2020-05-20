@@ -16,9 +16,8 @@ const Wrapper = styled.button`
   color: #d3170b;
   font-family: Futura;
   outline: none;
-  font-size: 1rem;
   padding: 10px 15px;
-  min-width: 125px;
+  min-width: 200px;
   width: fit-content;
   margin: auto;
   transition: all 300ms ease;

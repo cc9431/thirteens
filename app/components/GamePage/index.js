@@ -29,7 +29,7 @@ const Row = styled.div`
   grid-gap: 20px;
   grid-template-columns: repeat(3, 20px) repeat(auto-fit, minmax(0px, 1fr));
   border-radius: 8px;
-  min-height: 40px;
+  min-height: 60px;
   height: 100%;
   width: 100%;
   border: none;
@@ -43,7 +43,7 @@ const HeaderColumn = styled.div`
   text-align: center;
   margin: auto;
   background: transparent;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-family: Futura;
 `;
 
@@ -54,7 +54,7 @@ const RowData = styled.div`
   white-space: nowrap;
   overflow: visible;
   background: transparent;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-family: Futura;
 `;
 

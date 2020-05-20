@@ -11,9 +11,9 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   position: absolute;
-  margin: 10vh 10vw;
+  margin: 18vh 10vw 10vh;
   width: 80vw;
-  height: 80vh;
+  height: 72vh;
   overflow: auto;
   transition: all 800ms cubic-bezier(0.68, -0.6, 0.32, 1.6), width 0ms ease,
     height 0ms ease, margin 0ms ease;

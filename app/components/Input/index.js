@@ -11,11 +11,10 @@ import styled from 'styled-components';
 const Wrapper = styled.input`
   outline: none;
   border: none;
-  height: 40px;
+  height: 60px;
   user-select: none;
   background: #ff8f3d21;
   color: #d3170b;
-  font-size: 1rem;
   font-family: Futura;
   max-width: 180px;
   margin: auto;

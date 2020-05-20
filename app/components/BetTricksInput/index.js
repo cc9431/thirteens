@@ -10,7 +10,7 @@ import styled from 'styled-components';
 
 const FloatingInput = styled.div`
   position: relative;
-  bottom: 28px;
+  bottom: 67%;
   background: transparent;
   color: ${props => (props.showScore ? '#d3170b' : 'transparent')};
   visibility: ${props => (props.showScore ? 'visible' : 'hidden')};
@@ -39,7 +39,6 @@ const Input = styled.input`
 const Wrapper = styled.div`
   background: #ff8f3d21;
   user-select: none;
-  font-size: 1rem;
   font-family: Futura;
   border-radius: 8px;
   transition: all 500ms ease;
@@ -112,7 +111,7 @@ function BetTricksInput(props) {
     }
     return sum;
   };
-  // TODO floating column?
+
   return (
     <Wrapper>
       <BodyColumn key={player}>

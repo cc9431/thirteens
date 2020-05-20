@@ -23,7 +23,6 @@ const Row = styled.div`
   display: grid;
   grid-gap: inherit;
   grid-auto-flow: column;
-  max-width: 300px;
   margin: auto;
 `;
 

@@ -30,6 +30,7 @@ const Wrapper = styled.div`
   display: flex;
   height: 100vh;
   width: 100vw;
+  font-size: 1.4rem;
 `;
 
 const Back = styled(Button)`
