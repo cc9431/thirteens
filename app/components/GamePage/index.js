@@ -68,7 +68,7 @@ const defaultTable = (nRounds, nPlayers) => {
       totalDealt: nRounds - i,
     });
     for (let j = 0; j < nPlayers; j += 1) {
-      table[i].row.push({ bet: '', tricks: '' });
+      table[i].row.push({ bet: '', tricks: '', score: '' });
     }
   }
   return table;
@@ -102,6 +102,10 @@ export function GamePage(props) {
               (a, b) => a && !Number.isNaN(parseInt(b.tricks, 10)),
               true,
             );
+            const betsCompleted = row.reduce(
+              (a, b) => a && !Number.isNaN(parseInt(b.tricks, 10)),
+              true,
+            );
             const tricksWrong = tricksCompleted && totalDealt !== totalTricks;
             return (
               <Row key={round}>
@@ -116,6 +120,7 @@ export function GamePage(props) {
                     round={round}
                     player={player}
                     dealt={totalDealt}
+                    betsCompleted={betsCompleted}
                   />
                 ))}
               </Row>
