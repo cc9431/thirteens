@@ -82,7 +82,6 @@ function BetTricksInput(props) {
   // TODO if bets completed show tricks
   const { bet, tricks } = table[round].row[player];
   const showScore = bet !== '' && tricks !== '';
-
   const setPlayerBet = newBet => {
     if (!Number.isNaN(parseInt(newBet, 10)) || !newBet) {
       const newTable = [...table];
@@ -98,15 +97,13 @@ function BetTricksInput(props) {
       newTable[round].row[player].tricks = newTricks;
       newTable[round].row[player].score = calculateScore(bet, newTricks, dealt);
       newTable[round].totalTricks += newTricks - tricks;
-      console.log(newTable[round].row);
       setTable(newTable);
     }
   };
   const calculateTotalScore = () =>
-    table.slice(0, round + 1).reduce((a, b) => {
-      console.log(a, b, parseInt(b.row[player].score, 10) || 0);
-      return a + (parseInt(b.row[player].score, 10) || 0);
-    }, 0);
+    table
+      .slice(0, round + 1)
+      .reduce((a, b) => a + (parseInt(b.row[player].score, 10) || 0), 0);
 
   return (
     <Wrapper>

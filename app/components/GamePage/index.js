@@ -15,6 +15,7 @@ import BetTricksInput from '../BetTricksInput';
 const GridWrapper = styled.div`
   display: grid;
   grid-gap: 10px;
+  height: 100%;
 `;
 
 const GridBodyWrapper = styled.div`
